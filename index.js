@@ -20,7 +20,7 @@ const { createShortLink, openShortLink } = require('./controllers/url.controller
 app.use(bodyParser.json());
 
 //To tell express we are serving static files (front end files)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './')));
 
 //USE CONTROLLERS
 //route to create short link
